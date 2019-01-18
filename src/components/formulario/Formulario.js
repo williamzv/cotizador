@@ -15,7 +15,7 @@ class Formulario extends React.Component {
         const plan = this.planBasicoRef.current.checked ? 'basico': 'completo';
 
         // 1. Obtener los datos
-        console.log(this.marcaRef.current.value);
+        // console.log(this.marcaRef.current.value);
 
         // 2. Crear el objeto
         const infoAuto = {
@@ -62,7 +62,7 @@ class Formulario extends React.Component {
                 <div className="campo">
                     <label>Plan:</label>
                     <input type="radio" ref={this.planBasicoRef} name="plan" value="basico"/> Básico
-                    <input type="radio" ref={this.planCompletoRef} name="plan" value="completo"/> Completo
+                    <input type="radio" ref={this.planCompletoRef} name="plan" value="completo" /> Completo
                 </div>
 
                 <button type="submit" className="boton">Cotizar</button>

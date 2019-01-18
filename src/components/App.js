@@ -10,7 +10,7 @@ class App extends Component {
 
     state = {
         resultado: '',
-        datos: {}
+        datos: { }
     };
 
     cotizarSeguro = (datos) => {
@@ -40,7 +40,7 @@ class App extends Component {
     render() {
         return (
             <div className="contenedor">
-                <Header titulo= 'Cotizador de Seguro de Automovil' />                    
+                <Header titulo= 'Cotizador de Seguros de Automóvil' />                    
                 <div className="contenedor-formulario">
                     <Formulario cotizarSeguro={this.cotizarSeguro} />                    
                     <Resumen datos={this.state.datos} resultado={this.state.resultado} />
